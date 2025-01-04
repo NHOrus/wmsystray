@@ -338,7 +338,7 @@ int handle_dock_request (Window embed_wind) {
 		XReparentWindow (main_disp, embed_wind,
 				DefaultRootWindow(main_disp), 0, 0);
 		TRACE((stderr, "REJECTED!\n"));
-		return;
+		return 1;
 	}
 
 	XSelectInput (main_disp, embed_wind, StructureNotifyMask |

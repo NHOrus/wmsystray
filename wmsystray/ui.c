@@ -28,6 +28,7 @@ char *geometry_string = "64x64+0+0";
 int width, height, pos_x, pos_y;
 Pixmap bg_pixmap;
 char *bg_data;
+void draw_ui_elements();
 
 int wmaker = 1;
 int loop_program = 1;
