@@ -24,5 +24,6 @@ extern char *geometry_string;
 extern Display *main_disp;
 extern Window main_wind, icon_wind, sel_wind, draw_wind;
 extern char * wmsystray_xpm[];
+void draw_ui_elements();
 
 #endif

@@ -36,5 +36,7 @@ void cleanup_systray();
 int event_is_systray_event(XEvent *ev);
 int handle_systray_event(XEvent *ev);
 void repaint_systray();
+struct systray_item *find_systray_item (Window id);
+int systray_property_update (struct systray_item *item);
 
 #endif
